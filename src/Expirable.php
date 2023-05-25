@@ -21,7 +21,7 @@ trait Expirable
 
     public function initializeExpirable(): void
     {
-        $this->dates[] = $this->getExpiresAtColumn();
+        $this->addDate($this->getExpiresAtColumn());
     }
 
     /**
